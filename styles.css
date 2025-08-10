@@ -23,7 +23,7 @@ img{
     background-color: #a72;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 25px;
     border-radius: 7px;
     gap:15px;
     width: clamp(320px,auto,50%);
@@ -44,11 +44,14 @@ input{
 .radio-container{
     display: flex;
     align-items: center;
-    gap:5px
+    gap:3px;
+    width: auto;
+    white-space: nowrap;
 }
 .other-container{
     display: flex;
-    gap:10px
+    gap:10px;
+    flex-grow: 1;
 }
 .option-container{
     display: flex;
@@ -61,6 +64,7 @@ input[type="text"]{
     padding: 8px;
     border-radius: 7px;
     font-size: 1rem;
+    width: 70%;
 }
 input{
     cursor: pointer;

@@ -38,6 +38,7 @@ class Book{
         const status=document.createElement("td");
         const change=document.createElement("td");
         const remove=document.createElement("td");
+        let lastStatus=this.status;
         table.appendChild(tr);
         name.textContent=this.name;
         author.textContent=this.author;
@@ -52,9 +53,22 @@ class Book{
         tr.appendChild(change)
         tr.appendChild(remove)
         change.addEventListener("click",()=>{
-            if(status.textContent=="Yes") status.textContent="No";
-            else status.textContent="Yes"
-            saveBooks();
+            const select=document.createElement("select");
+            ["Yes", "No", "On It"].forEach(optValue => {
+            const option = document.createElement("option");
+            option.value = optValue;
+            option.textContent = optValue;
+            if (optValue === this.status) option.selected = true; 
+            select.appendChild(option);
+            });
+            status.innerHTML = "";
+            status.appendChild(select);
+            select.addEventListener("change", () => {
+            this.status = select.value; 
+            status.textContent = this.status; 
+            saveBooks(); 
+            });
+
         })
         remove.addEventListener("click",()=>{
             table.removeChild(tr);
