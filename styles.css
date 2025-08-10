@@ -18,9 +18,7 @@ body{
 img{
   max-width: 100%;
 }
-span{
-    font-size:.8rem;
-}
+
 .container{
     margin: auto;
     background-color: #a72;
