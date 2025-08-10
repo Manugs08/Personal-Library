@@ -60,6 +60,7 @@ input[type="text"]{
     border: 0;
     padding: 8px;
     border-radius: 7px;
+    font-size: 1rem;
 }
 input{
     cursor: pointer;
@@ -70,6 +71,7 @@ input[type="number"]{
     padding: 8px;
     border-radius: 7px;
     width: 68px;
+    font-size: 1rem;
 }
 
 button{
@@ -142,7 +144,7 @@ table {
 
 
 
-@media (max-width: 64rem) { 
+@media (max-width: 48rem) { 
   img {
     display: none;
   }
@@ -165,8 +167,8 @@ table {
   }
   .library-container {
     width: 100%;
-    overflow-x: auto; /* scroll horizontal en móviles */
-    justify-content: flex-start; /* opcional, para que no quede cortada */
+    
+    justify-content: flex-start;
   }
   table {
     min-width: 600px;
@@ -192,7 +194,10 @@ table {
     min-width: 500px;
     font-size: 0.85rem;
   }
-   input[type="text"], input[type="number"] {
-    width: 100%;
+   input[type="text"] {
+    width: 70%;
+  }
+  input[type="number"]{
+    width: 30%;
   }
 }
