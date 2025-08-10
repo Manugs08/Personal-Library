@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bookshelf</title>
+</head>
+<body>
+    <div class="img-container">
+    <img src="pilar.png">
+    </div>
+    <div class="container">
+        <h1>My Personal Library</h1>
+        <h2>Add Book</h2>
+        <div class="form">
+            <input type="text" placeholder="Name of the book" id="name">
+            <input type="text" placeholder="Author" id="author">
+            <input type="number" placeholder="Pages" id="pages">
+            <div class="option-container">
+            <label>Have you read it?</label>
+            <div class="other-container">
+            <div class="radio-container">
+                <input type="radio" name="read" value="Yes" >
+                <p>Yes</p>
+            </div>
+            <div class="radio-container">
+            <input type="radio" name="read" value="No" >
+            <p>No</p>
+            </div>
+            </div>
+            </div>
+        </div>
+        <button class="btn">ADD</button>
+        <div class="library-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <div class="img-container">
+    <img src="pilar.png">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
